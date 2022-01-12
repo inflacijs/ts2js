@@ -1,0 +1,22 @@
+Mana:
+docker build -t ts2js .
+
+Mareka:
+
+docker run -d  alpine -v ./typescript/:/typescript/ tsc my.ts > my.compiled.js
+
+
+Strādā:
+docker run ts2js:dev cat my.js > my.js
+docker run ts2js:dev -v typescrypt/:/usr/ts2js/typescript/ -w /usr/ts2js/typescript/ cat my.js > my.js 
+
+
+
+Docker build image from Dockerfile:
+
+docker build - < Dockerfile
+
+
+docker run -v /home/martins/projects/docker-typescript/my.ts:/usr/ts2js/my.ts -t ts2js:dev cat my.js > my.js
+
+docker run -v /home/martins/projects/docker-typescript/my33.ts:/usr/ts2js/my33.ts -t ts2js:dev tsc --init && tsc cat my33.js > my33.js

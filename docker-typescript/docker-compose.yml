@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+  ts2js:
+      image: "ts2js:dev"
+      build:
+        context: ./
+      volumes:
+          - "./typescript:/usr/ts2js/typescript"
+      container_name: ts2js
+      restart: always
