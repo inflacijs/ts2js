@@ -1,2 +1,2 @@
 # ts2js
-Dcoker container ts to js converter
+Docker container typescript to javascript converter.
