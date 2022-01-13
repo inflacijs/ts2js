@@ -9,4 +9,4 @@ docker build . --tag ts2js
 
 # 2. Run compiler through docker container
 # $(realpath src) explained: `$()` helps to avoid variable creation in another line. Realpath: Linux command to find file or folder realpath
-docker run -v $(realpath src):/app/src --rm ts2js tsc src/*
+docker run -v $(realpath src):/app/src --rm ts2js tsc src/*.ts
